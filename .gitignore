@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.env
+.DS_Store
+.idea/
+.vscode/
+results/
+*.musicxml
+*.xml
+*.mid
+*.midi
+
+# Keep folders, ignore generated content except placeholders
+!corpora/**/.gitkeep
+!data/**/.gitkeep
+!models/**/.gitkeep

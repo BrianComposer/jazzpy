@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+recursive-include corpora *
+recursive-include data *
+recursive-include models *
+recursive-include src/jazzpy *.typed

@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jazzpy"
+version = "0.1.0"
+description = "A symbolic jazz composition toolkit based on custom n-gram models and music21."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+  { name = "Brian Martínez-Rodríguez", email = "info@brianmartinez.music" }
+]
+keywords = ["music", "algorithmic composition", "jazz", "music21", "ngram", "symbolic music"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Sound/Audio",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+requires-python = ">=3.11"
+dependencies = [
+  "music21>=8.3,<10"
+]
+
+[project.urls]
+Homepage = "https://github.com/BrianComposer/jazzpy"
+Repository = "https://github.com/BrianComposer/jazzpy"
+Issues = "https://github.com/BrianComposer/jazzpy/issues"
+
+[project.scripts]
+jazzpy = "jazzpy.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+jazzpy = ["py.typed"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
