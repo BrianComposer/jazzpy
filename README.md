@@ -129,6 +129,21 @@ The default generation flow is:
 - The built-in phrase generator is designed for 4/4 jazz-like material.
 - Training data should be structurally consistent and preferably harmonic-annotated if you want the harmony extractor to work well.
 
+## Publications
+
+- Martínez-Rodríguez, B. (2019). *Emulación de estilos musicales mediante modelos de Markov*. EAE.
+  [https://hdl.handle.net/20.500.14468/14582]
+
+## Author
+
+Brian Martínez-Rodríguez
+
+GitHub: https://github.com/BrianComposer
+
+Email: info@brianmartinez.music
+
+Web: www.brianmartinez.music
+
 ## License
 
 MIT License.
